@@ -22,13 +22,13 @@ func init() {
 		fmt.Println("缺少配置相应的配置文件")
 	}
 
-	//加载
+	//加载 mysql
 	base.MysqlInit()
 }
 
 func main() {
 	//拦截器 通过session验证用户是否已经登录
-	beego.InsertFilter("/",beego.BeforeRouter,base.FilterUser)
+	beego.InsertFilter("/", beego.BeforeRouter, base.FilterUser)
 
 	//http错误重定向
 	beego.ErrorHandler("404", base.Page_not_found)
@@ -36,6 +36,3 @@ func main() {
 
 	beego.Run()
 }
-
-
-
