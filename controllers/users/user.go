@@ -1,14 +1,13 @@
 package users
 
 import (
-	"github.com/astaxie/beego"
+	"manager/controllers"
 )
 
-type LoginController struct {
-	beego.Controller
+type UserController struct {
+	controllers.BaseController
 }
 
-func (l *LoginController) Get() {
+func getUserInfo()   {
 
-	l.TplName = "login.html"
 }
