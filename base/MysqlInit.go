@@ -2,7 +2,6 @@ package base
 
 import (
 	"fmt"
-
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
@@ -11,7 +10,7 @@ import (
 func MysqlInit() {
 
 	mysql_username := beego.AppConfig.String("mysqluser")
-	fmt.Println("mysql_username = ", mysql_username)
+	//fmt.Println("mysql_username = ", mysql_username)
 	mysql_pass := beego.AppConfig.String("mysqlpass")
 	//fmt.Println()
 	mysql_host := beego.AppConfig.String("mysqlhost")
