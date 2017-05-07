@@ -3,8 +3,8 @@ package users
 import (
 	"encoding/json"
 	"fmt"
-	"manager/controllers"
-	. "manager/models/users"
+	"trading-manager/controllers"
+	. "trading-manager/models/users"
 
 	"github.com/astaxie/beego"
 )
