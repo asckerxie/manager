@@ -78,7 +78,7 @@ func (c *MainController) Get() {
 
 		//查询用户菜单信息
 
-		c.TplName = "index.html"
+		c.TplName = "main/main.html"
 	} else {
 		c.TplName = "login.html"
 	}

@@ -28,7 +28,7 @@ func Login(userName string, userPass string) (err error, user User) {
 
 	cond = cond.And("username", userName)
 	cond = cond.And("password", userPass)
-	cond = cond.And("status", 1)
+	cond = cond.And("status", 0)
 
 	qs = qs.SetCond(cond)
 
